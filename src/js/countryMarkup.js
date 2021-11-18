@@ -13,9 +13,6 @@ const countryMarkup = countries => {
     .flat()
     .join(', ');
 
-  if (countries.status === 404) {
-    throw new Error(error);
-  }
   if (length > 10) {
     const text = 'Too many matches found. Please enter a more specific name.';
     error(Notiflix.Notify.info(text));
